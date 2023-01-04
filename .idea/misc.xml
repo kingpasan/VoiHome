@@ -6,6 +6,8 @@
         <entry key="app/src/main/res/drawable/user_command_input.xml" value="0.15" />
         <entry key="app/src/main/res/drawable/voihome_command_output.xml" value="0.15" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/user_chat_layout.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/voihome_chat_layout.xml" value="0.165" />
         <entry key="app/src/main/res/menu/bottom_navigation_bar.xml" value="0.24947916666666667" />
       </map>
     </option>

@@ -10,15 +10,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="?actionBarSize"
-        android:background="@color/purple_700"
         android:orientation="vertical">
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="?actionBarSize"
-            android:layout_marginTop="?actionBarSize"
-            android:background="@android:color/holo_red_light">
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chatBoxRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
         </FrameLayout>
 
@@ -31,15 +33,15 @@
         android:layout_gravity="bottom"
         android:background="@color/white"
         android:backgroundTint="@color/colorPrimaryVariant"
-        app:fabAlignmentMode="end"
-        app:fabCradleMargin="20dp"
+        app:fabAlignmentMode="center"
+        app:fabCradleMargin="10dp"
         app:fabCradleRoundedCornerRadius="10dp"
         app:fabCradleVerticalOffset="10dp"
         app:menu="@menu/bottom_navigation_bar" />
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/btnTalkMic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryVariant"
