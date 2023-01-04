@@ -1,4 +1,4 @@
-package com.pasansemage.voihome;
+package com.pasansemage.voihome.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,6 +8,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.pasansemage.voihome.R;
+import com.pasansemage.voihome.models.Message;
 
 import java.util.ArrayList;
 

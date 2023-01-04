@@ -3,26 +3,25 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginLeft="50dp"
-    android:padding="2dp">
+    android:padding="4dp">
 
     <RelativeLayout
+        android:id="@+id/layoutformessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:background="@drawable/user_command_input_drawable"
-        android:id="@+id/layoutformessage">
+        android:background="@drawable/user_command_input_drawable">
 
         <TextView
+            android:id="@+id/usermessage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Testing chat"
-            android:textSize="18sp"
-            android:textColor="@color/white"
-            android:paddingRight="40dp"
             android:paddingLeft="7dp"
-            android:paddingBottom="7dp"
             android:paddingTop="7dp"
-            android:id="@+id/usermessage"/>
+            android:paddingRight="7dp"
+            android:paddingBottom="7dp"
+            android:text="Testing chat"
+            android:textColor="@color/white" />
 
 
     </RelativeLayout>

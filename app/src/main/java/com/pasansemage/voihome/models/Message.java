@@ -1,4 +1,4 @@
-package com.pasansemage.voihome;
+package com.pasansemage.voihome.models;
 
 public class Message {
 
