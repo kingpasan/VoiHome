@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/background.xml" value="0.157" />
         <entry key="app/src/main/res/drawable/user_command_input.xml" value="0.15" />
         <entry key="app/src/main/res/drawable/user_command_input_drawable.xml" value="0.128" />
         <entry key="app/src/main/res/drawable/voihome_command_output.xml" value="0.15" />

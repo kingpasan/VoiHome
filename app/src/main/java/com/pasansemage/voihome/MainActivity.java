@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         btnTalkMic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                btnTalkMic.setImageResource(R.drawable.microphone_on);
                 speechRecognizer.startListening(speechIntent);
             }
         });
@@ -96,11 +97,13 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onEndOfSpeech() {
+                btnTalkMic.setImageResource(R.drawable.microphone);
                 btnTalkMic.setEnabled(true);
             }
 
             @Override
             public void onError(int i) {
+                btnTalkMic.setImageResource(R.drawable.microphone);
                 btnTalkMic.setEnabled(true);
 
                 Message msg = new Message("I didn't get it, please say it again", 2);
@@ -116,12 +119,13 @@ public class MainActivity extends AppCompatActivity {
 
                 ArrayList<String> data = bundle.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
 
-                Message msg = new Message(data.remove(0),1 );
+                Message msg = new Message(data.remove(0), 1);
                 messageArrayList.add(msg);
 
                 messagesAdapter.notifyDataSetChanged();
 
                 btnTalkMic.setEnabled(true);
+                btnTalkMic.setImageResource(R.drawable.microphone);
             }
 
             @Override
